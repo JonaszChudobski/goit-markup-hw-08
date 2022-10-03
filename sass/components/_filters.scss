@@ -1,0 +1,74 @@
+.filters {
+  padding-bottom: 0;
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    &--inside {
+      @include filters__buttons;
+      background: $studioteam-color;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 0;
+      padding: 6px 22px;
+      &:hover,
+      &:focus {
+        background: $blue-color;
+        color: $white-color;
+        cursor: pointer;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .filters {
+    &__buttons {
+      justify-content: flex-start;
+      padding-left: 0;
+      margin-top: 60px;
+    }
+  }
+  .--inside-1,
+  .--inside-4 {
+    padding: 6px 0;
+    width: 103px;
+  }
+  .--inside-2,
+  .--inside-5 {
+    width: 128px;
+  }
+  .--inside-3 {
+    width: 135px;
+  }
+  .--inside-4 {
+    margin-top: 12px;
+  }
+  .--inside-5 {
+    margin-top: 12px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .filters {
+    &__buttons {
+      padding-left: 0;
+      margin-top: 60px;
+    }
+  }
+  .--inside-1,
+  .--inside-4 {
+    padding: 6px 0;
+    width: 103px;
+  }
+  .--inside-2,
+  .--inside-5 {
+    width: 128px;
+  }
+  .--inside-3 {
+    width: 135px;
+  }
+}

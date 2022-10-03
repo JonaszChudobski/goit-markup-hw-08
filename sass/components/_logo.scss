@@ -1,0 +1,24 @@
+.logo-web {
+  @include logo-web;
+}
+
+.logo-studio {
+  @include logo-studio;
+  &--menu-down {
+    color: $white-color;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .logo-web {
+    @include logo-web;
+    margin-left: 15px;
+  }
+
+  .logo-studio {
+    @include logo-studio;
+    &--menu-down {
+      color: $white-color;
+    }
+  }
+}

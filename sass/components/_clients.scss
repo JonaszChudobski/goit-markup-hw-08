@@ -1,0 +1,38 @@
+.clients {
+  padding-top: 0;
+  &__heading {
+    @include h2;
+    padding-top: 94px;
+    margin: 0 0 50px 0;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .clients {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .clients {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .icon-clients {
+    width: 226px;
+  }
+}
