@@ -9,6 +9,8 @@ body {
   font-family: Roboto, Raleway, sans-serif;
   color: #212121;
   width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -56,6 +58,8 @@ h3 {
     font-family: Roboto, Raleway, sans-serif;
     color: #212121;
     width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
   h1 {
     color: #fff;
@@ -80,6 +84,8 @@ h3 {
     font-family: Roboto, Raleway, sans-serif;
     color: #212121;
     width: 768px;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
   h1 {
     color: #fff;
@@ -379,11 +385,11 @@ h3 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon--footer {
+.social-icon--active {
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-icon--footer:hover, .social-icon--footer:focus {
+.social-icon--active:hover, .social-icon--active:focus {
   background-color: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -600,7 +606,7 @@ h3 {
             align-items: center;
     padding-bottom: 0px;
   }
-  .menu-down__address > p {
+  .menu-down__paragraph {
     margin: 0;
   }
   .menu-down__city {
@@ -717,7 +723,7 @@ h3 {
             align-items: center;
     padding-bottom: 0px;
   }
-  .menu-down__address > p {
+  .menu-down__paragraph {
     margin: 0;
   }
   .menu-down__city {
@@ -1576,7 +1582,7 @@ h3 {
       flex-wrap: wrap;
   gap: 30px;
 }
-.team__people > li {
+.team__people--element {
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

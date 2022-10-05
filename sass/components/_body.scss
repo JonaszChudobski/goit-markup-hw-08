@@ -8,6 +8,8 @@ body {
   font-family: Roboto, Raleway, sans-serif;
   color: $black-color;
   width: 1600px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -47,6 +49,8 @@ h3 {
     font-family: Roboto, Raleway, sans-serif;
     color: $black-color;
     width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -72,6 +76,8 @@ h3 {
     font-family: Roboto, Raleway, sans-serif;
     color: $black-color;
     width: 768px;
+    margin: 0 auto;
+    overflow-x: hidden;
   }
 
   h1 {
